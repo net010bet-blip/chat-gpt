@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#124e43"><title>Calculadora de final · UESC</title>
+<link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script>
+</head>
+<body>
+<header><a class="brand" href="./"><span class="logo">∑</span> campus<span class="dot">.</span></a><span class="badge">FEITA PARA ESTUDANTES DA UESC</span></header>
+<main>
+<section class="intro"><p class="eyebrow">MENOS CONTAS. MAIS CLAREZA.</p><h1>Quanto falta<br>para <em>passar?</em></h1><p class="description">Descubra a nota que você precisa na prova final e planeje seus próximos passos.</p><div class="note"><span>↗</span><p>Uma nota de cada vez.<br><strong>Você consegue chegar lá.</strong></p></div></section>
+<section class="calculator" aria-labelledby="calculator-title"><div class="card-heading"><span class="mini-icon">÷</span><span>CALCULADORA DE FINAL</span><span class="pill">0 a 10</span></div><h2 id="calculator-title">Vamos fazer as contas</h2><p class="muted">Informe sua média do semestre.</p>
+<form id="calculator"><label for="average">Sua média antes da final</label><div class="input-wrap"><input id="average" name="average" type="text" inputmode="decimal" placeholder="Ex.: 4,5" autocomplete="off" required aria-describedby="input-hint"><span> / 10</span></div><p id="input-hint" class="hint">Pode usar vírgula ou ponto para os decimais.</p>
+<details><summary>Conferir ou ajustar a regra</summary><div class="rules"><label for="direct">Média para aprovação direta<input id="direct" type="number" min="0" max="10" step="0.1" value="7" required></label><label for="target">Média após a final<input id="target" type="number" min="0" max="10" step="0.1" value="5" required></label><label for="minimum">Mínimo para fazer a final<input id="minimum" type="number" min="0" max="10" step="0.1" value="3" required></label></div><p class="hint">Fórmula: (média do semestre + final) ÷ 2. Confirme os critérios da sua disciplina.</p></details>
+<button type="submit">Calcular minha nota <span>→</span></button></form>
+<div id="result" class="result" role="status" aria-live="polite"><span class="result-icon">✧</span><p>Sua próxima meta aparece aqui.<br><small>Preencha sua média para começar.</small></p></div>
+<p class="disclaimer">Ferramenta independente, sem vínculo oficial com a UESC. Os valores iniciais são uma simulação e precisam ser conferidos no regulamento vigente. Frequência e critérios específicos da disciplina também podem determinar a aprovação.</p></section>
+</main><footer><span>Feito para simplificar sua vida acadêmica.</span><span>Seus dados ficam só no seu navegador. ♡</span></footer>
+</body></html>
